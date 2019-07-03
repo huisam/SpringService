@@ -1,5 +1,6 @@
 package com.huisam.web.domain.posts;
 
+import com.huisam.web.domain.BaseTimeEntity;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -10,7 +11,7 @@ import javax.persistence.Id;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity // 테이블 이름
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // PrimaryKey
     @GeneratedValue // Auto Increment

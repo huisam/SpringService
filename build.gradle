@@ -1,9 +1,10 @@
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'java'
+    id 'io.spring.dependency-management' version "1.0.4.RELEASE"
 }
 
-apply plugin: 'io.spring.dependency-management'
+//apply plugin: 'io.spring.dependency-management'
 
 group = 'com.huisam'
 version = '0.0.1-SNAPSHOT'
@@ -11,6 +12,7 @@ sourceCompatibility = '1.8'
 
 configurations {
     developmentOnly
+
     runtimeClasspath {
         extendsFrom developmentOnly
     }
@@ -22,6 +24,8 @@ configurations {
 repositories {
     mavenCentral()
 }
+
+ext['hibernate.version'] = '5.2.11.Final' //추가
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
