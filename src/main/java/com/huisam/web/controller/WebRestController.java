@@ -1,5 +1,6 @@
 package com.huisam.web.controller;
 
+import com.huisam.web.dto.PostsSaveRequestsDto;
 import com.huisam.web.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.huisam.web.service;
 
-import com.huisam.web.controller.PostsSaveRequestsDto;
+import com.huisam.web.dto.PostsSaveRequestsDto;
 import com.huisam.web.repository.PostsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

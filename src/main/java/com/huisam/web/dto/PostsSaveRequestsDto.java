@@ -1,4 +1,4 @@
-package com.huisam.web.controller;
+package com.huisam.web.dto;
 
 import com.huisam.web.domain.posts.Posts;
 import lombok.Builder;
