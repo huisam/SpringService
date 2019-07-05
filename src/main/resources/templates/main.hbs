@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>타이틀</title>
+    <!-- css 라이브러리 -->
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    스프링부트에 오신 것을 환영합니다.
+<div class="container">
+    <h1>스프링부트로 시작하는 웹 서비스</h1>
+
+    <div class="col-md-12">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
+    </div>
+
+    <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="savePostsLabel">게시글 등록</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">제목</label>
+                            <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="author"> 작성자 </label>
+                            <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="content"> 내용 </label>
+                            <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- js 라이브러리 body 최하단에 놓는 것이 성능상 좋다.
+    js는 로딩시 오래걸리기 때문이다!-->
+<script src="webjars/jquery/3.4.1/dist/jquery.min.js"></script>
+<script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="/static/js/main.js"></script>
 </body>
 </html>

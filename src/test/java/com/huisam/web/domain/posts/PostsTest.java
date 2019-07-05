@@ -1,5 +1,6 @@
 package com.huisam.web.domain.posts;
 
+import com.huisam.web.repository.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

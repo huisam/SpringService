@@ -1,5 +1,6 @@
-package com.huisam.web.domain.posts;
+package com.huisam.web.repository;
 
+import com.huisam.web.domain.posts.Posts;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PostsRepository extends JpaRepository<Posts, Long> {
