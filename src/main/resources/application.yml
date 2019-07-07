@@ -9,3 +9,5 @@ spring:
   profiles: local
   jpa:
     show-sql: true
+  mvc:
+    static-path-pattern: /static/**
