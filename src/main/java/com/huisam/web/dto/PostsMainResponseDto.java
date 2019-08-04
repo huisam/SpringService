@@ -27,7 +27,7 @@ public class PostsMainResponseDto {
     }
 
     private String toStringDatetime(LocalDateTime localDateTime) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-mm-dd HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return Optional.of(localDateTime)
                 .map(formatter::format)
                 .orElse("");
